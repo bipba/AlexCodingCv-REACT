@@ -1,0 +1,216 @@
+.portfolio {
+    .portfolioContent {
+      background: $color-5;
+      min-height: $minHeight;
+      border-radius: $borderRaduis;
+  
+      .projects {
+        margin-top: 22px;
+        padding: 0 0 0 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        row-gap: 22px;
+        border-radius: $borderRaduis;
+        a {
+          display: block;
+          width: 80px;
+          margin: 10px auto 15px;
+          padding: 5px 15px;
+          background-color: $color-3;
+          color: $white;
+          border: none;
+          border-radius: 20px;
+          font-size: 1rem;
+          font-weight: bold;
+          cursor: pointer;
+          transition: background-color 0.3s ease, transform 0.2s ease;
+  
+          &:hover {
+            background-color: darken($color-1, 10%);
+            transform: scale(1.05);
+          }
+  
+          &:active {
+            transform: scale(0.95);
+          }
+  
+          span {
+            color: darken($color-1, 10%);
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+    .projects .project .icons {
+      color: whitesmoke;
+      text-decoration: none;
+      text-align: center;
+      margin: 11px 0;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .projects .project {
+      background-color: $color-1;
+      border-radius: $borderRaduis;
+      width: 223px;
+      overflow: hidden;
+  
+      .icons {
+        text-align: center;
+        margin: 11px 0;
+    }
+    
+    h3 {
+        color: white;
+        text-align: center;
+    }
+    
+    span i {
+         background: darken($color-1, 10%);
+        margin: 0 0 15px 140px;
+      }
+  
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+    }
+  }
+  @media screen and (max-width: 580px) {
+    .portfolioContent .projects a {
+      padding: 40px 0 0 10px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      row-gap: 22px;
+      border-radius: 25px;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .portfolio {
+//     .portfolioContent {
+//       background: $color-5;
+//       min-height: $minHeight;
+//       border-radius: $borderRaduis;
+  
+//       .projects {
+//         margin-top: 22px;
+//         padding: 0px 0 0 10px;
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: space-around;
+//         flex-wrap: wrap;
+//         row-gap: 22px;
+//         border-radius: $borderRaduis;
+  
+//         a {
+//             display: block;
+//             width: 80px;
+//             margin: 10px auto 15px auto; // Centre le bouton horizontalement
+//             padding: 5px 15px;
+//             background-color: $color-1;
+//             color: white;
+//             border: none;
+//             border-radius: 20px; // Rond ou ovale selon la largeur
+//             font-size: 1rem;
+//             font-weight: bold;
+//             cursor: pointer;
+//             transition: background-color 0.3s ease, transform 0.2s ease;
+        
+//             &:hover {
+//               background-color: darken($color-1, 10%);
+//               transform: scale(1.05); // Légère animation pour effet de clic
+//             }
+        
+//             &:active {
+//               transform: scale(0.95); // Réduction légère quand on clique
+//             }
+//             span{
+//                 margin-left: 10px;
+        
+//             }
+//           }
+//         }
+//         //   width: 33%;
+//         //   text-decoration: none;
+        
+        
+//       }
+//     }
+  
+
+//     .portfolio .portfolioContent .projects .project .icons {
+//         color:darken($color-1, 10%);
+//         // color: $color-2;
+//         text-decoration: none;
+//         text-align: center;
+//         margin: 11px 0;
+//         display: flex;
+//         justify-content: space-evenly;
+//         /* align-items: stretch; */
+//     }
+
+
+
+
+
+
+  
+  
+//   @media screen and (max-width: 580px) {
+//     .portfolio .portfolioContent .projects a {
+//       padding: 40px 0 0 10px;
+//       width: 100%;
+//       display: flex;
+//       justify-content: space-around;
+//       flex-wrap: wrap;
+//       row-gap: 22px;
+//       border-radius: 25px;
+//     }
+//   }
+  
+//   .portfolio .portfolioContent .projects .project {
+//     background-color: $color-3;
+//     border-radius: $borderRaduis;
+//     width: 223px;
+//     overflow: hidden; // Pour éviter que l’image dépasse le conteneur
+  
+//     .icons {
+//       text-align: center;
+//       margin: 11px 0;
+//     }
+  
+//     h3 {
+//       text-align: center;
+//     }
+  
+//     span i {
+//       margin: 0 0 15px 140px;
+//     }
+  
+//     img {
+//       width: 100%; // L’image prend toute la largeur du conteneur
+//       height: 100%; // L’image prend toute la hauteur du conteneur
+//       object-fit: cover; // L’image garde ses proportions en remplissant le conteneur
+//       display: block;
+//     }
+//   }
+  
