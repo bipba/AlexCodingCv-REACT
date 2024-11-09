@@ -3,7 +3,7 @@
 $font-1: 'Noto Sans', cursive;
 $font-2: 'Dosis', sans-serif;
 $font-3: 'Josefin Sans', serif;
-
+$color-0:rgb(43, 3, 3);
 $color-1:#6c77f4;
 $color-2:#6c77f4;
 $color-3:#e3c415;
@@ -11,6 +11,8 @@ $color-4:black;
 $color-5:#1bfff4;
 $white:#ddd;
 $black:#333;
+$linkColor: #ffffff; // Blanc pour les liens
+$activeLinkColor: #ff6347; // Rouge vif pour l'élément actif
 
 $borderRaduis: 25px;
 $shadow: 0 1px 3px #333;

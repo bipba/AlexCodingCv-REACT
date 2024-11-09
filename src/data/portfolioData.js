@@ -2,34 +2,43 @@ export const portfolioData=[
     {
         id:1,
         name:"OhMyFood.fr",
+        languages:['javascript','sass'],
         languagesIcons:['fab fa-js','fab fa-sass'],
         source: 'https://github.com/bipba/Ohmyfood',
+        info:'blablavlavalalvjkjl',
+        // picture:'./media/nina-small_11zon.webp',
         picture:'./media/ohMyFood.jpg',
        
     },
     {
         id:2,
         name:"Nina.fr",
+        languages:['html','javascript'],
         languagesIcons:['fab fa-html5','fab fa-sass'],
         source: 'https://github.com/bipba/nina',
+        info:'blablavlavalalvjkjl',
         picture:'./media/nino.jpg',
       
     },
     {
         id:3,
         name:"Architecte.fr",
+        languages:['html','javascript'],
         languagesIcons:['fab fa-js','fab fa-react'],
         source: 'https://github.com/bipba/FRONTENDFOLIO',
-        picture:'./media/sophie-bluel.png',
-
+        info:'blablavlavalalvjkjl',
+        picture:'./media/sophie-bluel_11zon.jpg',
+        // picture:'./media/nina-small_11zon.webp',
     },
     {
         id:4,
         name:"Kasa.fr",
+        languages:['react','sass'],
         languagesIcons:['fab fa-react','fab fa-sass'],
         source: 'https://github.com/bipba/kasa',
+        info:'blablavlavalalvjkjl',
         picture:'./media/kasa.jpg',
-      
+        // picture:'./media/nina-small_11zon.webp',
     },
     {
         id:5,
@@ -39,14 +48,17 @@ export const portfolioData=[
         source: 'https://github.com/bipba/argent-bank-back-front',
         info:'blablavlavalalvjkjl',
         picture:'./media/bank-tree.webp',
-     
+        // picture:'./media/nina-small_11zon.webp',
        
     },
     {
         id:6,
         name:"724Events.com",
+        languages:['javascript','react','sass'],
         languagesIcons:['fab fa-js','fab fa-react','fab fa-sass'],
         source: 'https://github.com/bipba/Ohmyfood',
+        info:'blablavlavalalvjkjl',
         picture:'./media/724events300.png',
+        // picture:'./media/nina-small_11zon.webp',
     },
 ]
