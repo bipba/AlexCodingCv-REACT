@@ -9,27 +9,23 @@ const Experience = () => {
             <div className='exp-1'>
                 <h4>Formation OpenClassRoom</h4>
                 <h5>2024 - 2025</h5>
-                <p>lorem lorem5</p>
+                <p>La formation OpenClassrooms en intégration web offre une approche pratique et 
+                    professionnalisante. En réalisant des projets encadrés par un expert,
+                     j'ai pu développer des compétences essentielles et constituez un portfolio. 
+                     Elle délivre un diplôme de niveau 5 (bac +2) et s'étend sur 9 mois à 
+                     temps plein, avec 603 heures supervisées. Cette méthode garantit un 
+                     savoir-faire concret pour ma réorientation professionnelle.</p>
             </div>
             <div className='exp-2'>
                 <h4>À propos de moi</h4>
               
-                <p>
-
-
-                Après plusieurs années dans le nautisme, j'ai décidé de me lancer dans une 
-                nouvelle aventure : Développeur Web.<br></br> Passionné, je découvre de nouveaux outils 
-                pour enrichir mes compétences et explorer de nouvelles opportunités. <br></br>J'aime créer 
-                et voir mes idées prendre vie à l'écran !<br></br>J'adore voir mon imagination s'animer sous les clicks, 
-                    autant que de résoudre des casses-têtes exigeants.
-                    {/* Aprés de nombreuses années passées dans le monde passionnant du nautisme,
-                    j'ai décidé de donner un nouveau souffle à ma carrière et d'oser vivre un
-                    rêve : Dévellopeur Web. <br></br>Passionné avant tout, j'explore de nouveaux outils 
-                    pour monter en compétences et pouvoir m'ouvrir à des possibilités nouvelles !<br></br> */}
-                    {/* J'aime créer des choses qui prennent forme à l'écran, que se soit sites web ou quoique
-                    ce soit entre les deux. <br>
-                    </br>J'adore voir mon imagination s'animer sous les clicks, 
-                    autant que de résoudre des casses-têtes exigeants. */}
+                <p>Après des années à naviguer sur les flots, 
+                    j’ai changé de cap vers le développement web !
+                     <br></br>Passionné, j’explore sans cesse de nouveaux outils, 
+                     transformant idées en pixels. <br></br>Rien ne vaut le plaisir 
+                     de voir mon imagination s’animer sous les clics... 
+                     et les défis !
+                
                 </p>
             </div>
             </div>

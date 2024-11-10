@@ -6,7 +6,7 @@ const NavBar = () => {
     <div className="sidebar" role="complementary">
       <div className="id" role="banner">
         <div className="idContent">
-          <img src="./media/IMG_worldLogo.png" alt="Logo AlexCoding" />
+          <img src="./media/IMG_world-1.png" alt="Logo AlexCoding" />
           <h3>AlexCoding</h3>
         </div>
       </div>

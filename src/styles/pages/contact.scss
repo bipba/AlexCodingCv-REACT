@@ -1,5 +1,5 @@
 .contactContent {
-    background: url('../../../public/media/IMG_world.png') no-repeat center/cover;
+    background: url('../../../public/media/preview.png') no-repeat center/cover;
     border-radius: 25px;
     width: 100%;
     overflow: hidden;
@@ -10,13 +10,11 @@
       "1"
       "2"
       "3";
-  
-    // Section Header
     .header {
       grid-area: 1;
       width: 100%;
       height: 340px;
-  
+    
       &:before {
         content: '';
         width: 100%;
@@ -24,8 +22,6 @@
         position: absolute;
       }
     }
-  
-    // Section Contact Box
     .contactBox {
       grid-area: 2;
       background: $color-5;
@@ -36,10 +32,10 @@
       width: 50%;
       min-width: 440px;
       min-height: 200px;
-  
+    
       h1 {
         text-align: center;
-        margin-top: .3rem;
+        margin-top: 0.3rem;
         position: relative;
         color: black;
   
@@ -54,44 +50,42 @@
           transform: translateX(-50%);
         }
       }
-  
+    
       ul {
         height: 72%;
-        width: inherit;
+        width: 100%;
         display: grid;
         margin-top: 3.5rem;
-  
+    
         li {
           position: relative;
-        }
   
-        i {
-          font-size: 100%;
-          position: absolute;
-          transform: translateY(8px);
-          margin-left: 20px;
-          color: $color-2;
-        }
+          i {
+            font-size: 100%;
+            position: absolute;
+            transform: translateY(8px);
+            margin-left: 20px;
+            color: $color-2;
+          }
   
-        span {
-          font-size: 1.4rem;
-          position: absolute;
-          transform: translateX(52px);
-          background: transparent;
-          border: none;
-          outline: none;
-          width: 350px;
-          transition: .2s ease;
+          span {
+            font-size: 1.4rem;
+            position: absolute;
+            transform: translateX(52px);
+            background: transparent;
+            border: none;
+            outline: none;
+            width: 350px;
+            transition: 0.2s ease;
   
-          &.clickInput:hover {
-            transform: translateX(56px);
-            cursor: pointer;
+            &.clickInput:hover {
+              transform: translateX(56px);
+              cursor: pointer;
+            }
           }
         }
       }
     }
-  
-    // Section Social Network
     .socialNetwork {
       grid-area: 3;
       @include verticalCenter;
@@ -106,26 +100,29 @@
           width: 20%;
           font-size: 1.2rem;
           background: $color-5;
-          border-radius: $borderRaduis;
+          border-radius: 25px;
           display: inline-block;
-          padding: .7rem 0;
+          padding: 0.7rem 0;
           box-shadow: $shadow;
           transform: scaleY(0);
           transform-origin: top;
-          transition: .2s ease, scale .1s;
+          transition: 0.2s ease, scale 0.1s;
   
           &:hover {
-            background: $color-4;
+            background: $color-3;
+          }
+  
+          p {
+            font-size: large;
+            font-weight: 600;
           }
   
           i {
             color: $color-2;
-            margin-top: .3rem;
+            margin-top: 0.3rem;
           }
         }
-  
-        // Animation pour les icônes de réseaux sociaux
-        @mixin networAnim($timeout) {
+        @mixin networkAnim($timeout) {
           animation: pop 1s forwards;
           animation-delay: $timeout;
         }
@@ -136,30 +133,17 @@
           }
         }
   
-        a:nth-child(1) {
-          @include networAnim(.4s);
-        }
-  
-        a:nth-child(2) {
-          @include networAnim(.5s);
-        }
-  
-        a:nth-child(3) {
-          @include networAnim(1.2s);
-        }
-  
-        a:nth-child(4) {
-          @include networAnim(1.6s);
-        }
+        a:nth-child(1) { @include networkAnim(0.4s); }
+        a:nth-child(2) { @include networkAnim(0.5s); }
+        a:nth-child(3) { @include networkAnim(1.2s); }
+        a:nth-child(4) { @include networkAnim(1.6s); }
       }
     }
   }
-  
-  // Styles pour les écrans de moins de 500px
   @media screen and (max-width: 500px) {
     .contactContent {
       .contactBox {
-        min-width: 100% !important;
+        min-width: 88% !important;
   
         ul i {
           font-size: 80%;
@@ -171,200 +155,16 @@
       }
   
       span {
-        font-size: .9rem !important;
+        font-size: 0.9rem !important;
       }
   
       h4 {
-        font-size: .8rem;
+        font-size: 0.8rem;
       }
     }
-  }
   
-
-
-
-
-
-
-
-
-
-// .contactContent{
-//     // background: $color-3;
-//     background: url('../../../public/media/IMG_world.png')no-repeat center/cover;
-
-//     border-radius: 25px;
-//     width: 100%;
-//     overflow: hidden;
-//     display: grid;
-//     grid-template-columns: 1fr;
-//     grid-template-rows: 20% 45% 35%;
-//     grid-template-areas: 
-//     "1"
-//     "2"
-//     "3";
-//     .header{
-//         grid-area: 1;
-//         width: 100%;
-//         // position: relative;
-//         // background: $color-3;
-//         height: 340px;
-//         // z-index: 0;
-//         &:before{
-//             content: '';
-//             width: 100%;
-//             height: 100%;
-//             position: absolute;
-//             // background: url(./../../../public/media/IMG_project5.jpg) no-repeat center top/cover;
-//         }
-//         // &:after{
-//             //     content: '';
-//             //     width: 100%;
-//             //     height: 100%;
-//             //     position: absolute;
-//             //     top: 30px;
-//             //     background: url(./../../../public/media/shape.svg);
-//             // }
-//         }
-//         .contactBox{
-//             grid-area: 2;
-//             background: $color-5;
-//             margin: 0 auto;
-//             z-index: index 2;
-//             border-radius: $borderRaduis;
-//             box-shadow: 0 3px 10px #333;
-//             width: 50%;
-//             min-width: 440px;
-//             min-height: 200px;
-            
-//             h1{
-//                 text-align: center;
-//                 margin-top: .3rem;
-//                 position: relative;
-//                 color: $color-2;
-//                 &:after{
-//                     content: '';
-//                     height: 1px;
-//                     width: 50%;
-//                     background: $color-1;
-//                     position: absolute;
-//                     bottom: -25px;
-//                     left: 50%;
-//                     transform: translateX(-50%);
-//                 }
-//             }
-//             ul{
-//                 height: 72%;
-//                 width: inherit;
-//                 display: grid;
-//                 margin-top: 3.5rem;
-//                 li{
-//                     position: relative;
-//                 }
-//                 i{
-//                     font-size: 100%;
-//                     position: absolute;
-//                     transform: translateY(8px);
-//             margin-left: 20px;
-
-//                     color: $color-2;
-//                 }
-//                 span{
-//                     font-size: 1.4rem;
-//                     position: absolute;
-//                     transform: translateX(52px);
-//                     background: transparent;
-//                     border: none;
-//                     outline: none;
-//                     width: 350px;
-//                     transition: .2s ease;
-//                 }
-//                 .clickInput:hover{
-//                     transform: translateX(56px);
-//                     cursor: pointer;
-//                 }
-//             }
-//         }
-//         .socialNetwork{
-//             grid-area: 3;
-//             @include verticalCenter;
-
-//             ul{
-//                 display: flex;
-//                 text-align: center;
-//                 width: 100%;
-//                 justify-content: space-around;
-
-//                 a{
-//                     width: 20%;
-//                     font-size: 1.2rem;
-//                     background: $color-5;
-//                     border-radius: $borderRaduis;
-//                     display: inline-block;
-//                     padding: .7rem 0;
-//                     box-shadow: $shadow;
-//                     transform: scaleY(0);
-//                     transform-origin: top;
-//                     transition: .2s ease;
-//                     transition: scale .1s;
-//                     &:hover{
-//                         background: $color-4;
-//                     }
-//                     i{
-//                         color: $color-2;
-//                         margin-top:.3rem
-//                     }
-//                 }
-//                 @mixin networAnim($timeout){
-//                     animation: pop 1s forwards;
-//                     animation-delay: $timeout;
-//                 }
-//                 @keyframes pop{
-//                     to{
-//                         transform: scaleY(1);
-//                     }
-//                 }
-//                 a:nth-child(1){
-//                     @include networAnim(.4s)
-//                 }
-//                 a:nth-child(2){
-//                     @include networAnim(.5s)
-//                 }
-//                 a:nth-child(3){
-//                     @include networAnim(1.2s)
-//                 }
-//                 a:nth-child(4){
-//                     @include networAnim(1.6s)
-//                 }
-//             }
-//         }
-        
-//     }
-//     @media screen and (max-width: 500px){
-//         .contactContent{
-//             .contactBox{
-//                 min-width: 100% !important;
-               
-//               ul i{
-//                     font-size: 80%;
-//                     position: absolute;
-//                     margin-left: 20px;
-//                     transform: translateY(4px);
-//                     color: $color-2;
-//                 }
-//             }
-//             span{
-//                 font-size: .9rem !important;
-//             }
-//             h4{
-//                 font-size: .8rem;
-//             }
-//         }
-//         // .contactContent .contactBox ul i{
-//         //     font-size: 80%;
-//         //     position: absolute;
-//         //     margin-left: 20px;
-//         //     transform: translateY(4px);
-//         //     color: $color-2;
-//         // } 
-//     }
+    .contactContent .socialNetwork ul a p {
+      font-size: 12px;
+      font-weight: 600;
+    }
+  }
