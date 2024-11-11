@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/AlexCodingCv-React/static/css/main.a6a1b695.css",
+    "main.js": "/AlexCodingCv-React/static/js/main.322f6c39.js",
+    "static/media/IMG_project5.jpg": "/AlexCodingCv-React/static/media/IMG_project5.cbe4784e5b22d4311155.jpg",
+    "static/media/preview.png": "/AlexCodingCv-React/static/media/preview.2d3679f64c963f10965e.png",
+    "index.html": "/AlexCodingCv-React/index.html",
+    "main.a6a1b695.css.map": "/AlexCodingCv-React/static/css/main.a6a1b695.css.map",
+    "main.322f6c39.js.map": "/AlexCodingCv-React/static/js/main.322f6c39.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a6a1b695.css",
+    "static/js/main.322f6c39.js"
+  ]
+}
