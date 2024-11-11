@@ -3,8 +3,6 @@ import NavBar from '../components/NavBar';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import Footer from '../components/Footer';
 
-
-
 const Contact = () => {
     return (
     <>
@@ -67,5 +65,4 @@ const Contact = () => {
     </>
     );
 };
-
 export default Contact;

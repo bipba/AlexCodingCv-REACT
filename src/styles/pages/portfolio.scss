@@ -6,7 +6,6 @@
   
       .projects {
         margin-top: 42px;
-        // padding: 0 0 0 0px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -28,7 +27,7 @@
           transition: background-color 0.3s ease, transform 0.2s ease;
   
           &:hover {
-            // background-color: darken($color-1, 10%);
+            background-color: $color-5;
             box-shadow: $shadow;
             transform: scale(1.05);
           }
@@ -38,7 +37,7 @@
           }
   
           span {
-            color: darken($color-1, 10%);
+            color:$color-2;
             margin-left: 10px;
           }
         }
@@ -53,7 +52,7 @@
       justify-content: space-evenly;
     }
     .projects .project {
-      background-color: $color-1;
+      background-color: $color-2;
       border-radius: $borderRaduis;
       width: 225px;
       overflow: hidden;

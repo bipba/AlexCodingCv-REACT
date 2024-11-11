@@ -11,7 +11,7 @@ $color-4:black;
 $color-5:#1bfff4;
 $white:#ddd;
 $black:#333;
-$linkColor: #ffffff; // Blanc pour les liens
+
 $borderRaduis: 25px;
 $shadow: 0 1px 3px #333;
 $minHeight: 95vh;
@@ -31,8 +31,7 @@ body{
     margin: 0rem auto;
     max-width: 1200px;
     font-family: $font-1;
-    // color: $black;
-    background-color: rgb(3, 3, 55);
+    color: $black;
 }
 button{
     cursor: pointer;
