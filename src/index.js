@@ -20,7 +20,7 @@ reportWebVitals();
 
 function adjustLayout() {
   // Vérifie si l'écran est en mode mobile (largeur <= 580px)
-  if (window.innerWidth <= 580) {
+  if (window.innerWidth <= 550) {
       // Sélectionne le conteneur principal
       const container = document.querySelector('.knowledgesContent');
 
@@ -62,58 +62,6 @@ function adjustLayout() {
       });
   }
 }
-
-
-
-
-
-
-
-
-
-// function adjustLayout() {
-//   // Vérifie si l'écran est en mode mobile (largeur <= 580px)
-//   if (window.innerWidth <= 580) {
-//       // Sélectionne le conteneur principal
-//       const container = document.querySelector('.knowledgesContent');
-
-//       // Applique les styles au conteneur principal pour qu'il fonctionne en colonne unique
-//       if (container) {
-//           container.style.display = 'flex';
-//           container.style.flexDirection = 'column';
-//           container.style.width = '100%';
-//       }
-
-//       // Sélectionne chaque section pour la forcer en pleine largeur et en colonne
-//       const sections = document.querySelectorAll('.languagesFramworks, .experience, .otherSkills, .hobbies');
-
-//       sections.forEach(section => {
-//           section.style.width = '100%'; // Assure que chaque section prend toute la largeur
-//           section.style.margin = '0 0 1rem 0'; // Espacement en bas de chaque section
-//           section.style.padding = '1rem'; // Padding autour pour aérer le contenu
-//           section.style.boxSizing = 'border-box'; // Inclut le padding dans la largeur totale
-//           section.style.display = 'block'; // Affiche chaque section comme un bloc
-//           section.style.clear = 'both'; // Assure que rien ne flotte à côté
-//       });
-//   } else {
-//       // Réinitialise les styles pour le mode bureau
-//       const container = document.querySelector('.knowledgesContent');
-//       if (container) {
-//           container.style.display = ''; // Supprime le style personnalisé
-//           container.style.width = ''; // Supprime le style personnalisé
-//       }
-
-//       const sections = document.querySelectorAll('.languagesFramworks, .experience, .otherSkills, .hobbies');
-//       sections.forEach(section => {
-//           section.style.width = ''; // Supprime le style personnalisé
-//           section.style.margin = ''; // Supprime le style personnalisé
-//           section.style.padding = ''; // Supprime le style personnalisé
-//           section.style.boxSizing = ''; // Supprime le style personnalisé
-//           section.style.display = ''; // Supprime le style personnalisé
-//           section.style.clear = ''; // Supprime le style personnalisé
-//       });
-//   }
-// }
 
 // Exécuter la fonction au chargement de la page
 window.addEventListener('load', adjustLayout);

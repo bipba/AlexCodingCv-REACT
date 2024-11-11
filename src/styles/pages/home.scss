@@ -15,6 +15,7 @@
             height: 100%;
             width: inherit;
             background: url('../../../public/media/IMG_project5.jpg') center/cover;
+            object-fit: contain;
             z-index: -1;
             filter: brightness(120%);
         }

@@ -31,7 +31,8 @@ body{
     margin: 0rem auto;
     max-width: 1200px;
     font-family: $font-1;
-    color: $black;
+    // color: $black;
+    background-color: rgb(3, 3, 55);
 }
 button{
     cursor: pointer;

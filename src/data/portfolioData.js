@@ -26,7 +26,7 @@ export const portfolioData=[
         languages:['react','sass'],
         languagesIcons:['fab fa-react','fab fa-sass'],
         source: 'https://github.com/bipba/kasa',
-        picture:'./media/kasa.jpg',
+        picture:'./media/kasa1.jpg',
       },
     {
         id:5,
